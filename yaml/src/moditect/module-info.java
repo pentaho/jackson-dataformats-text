@@ -3,7 +3,7 @@ module com.fasterxml.jackson.dataformat.yaml {
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
 
-    // Not sure what canonical module name is for SnakeYAML?
+    // Not sure what canonical module name is for SnakeYAML?  -- does this need fixing? package should be the same
     requires org.yaml.snakeyaml;
 
     exports com.fasterxml.jackson.dataformat.yaml;
