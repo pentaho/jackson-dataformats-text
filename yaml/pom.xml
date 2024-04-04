@@ -63,6 +63,22 @@
         <groupId>org.moditect</groupId>
         <artifactId>moditect-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>5.1.8</version>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Export-Package>
+              com.fasterxml.jackson.dataformat.*;version=${project.version}
+            </Export-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+
+
     </plugins>
+
   </build>
 </project>
